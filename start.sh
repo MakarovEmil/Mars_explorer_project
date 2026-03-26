@@ -1,4 +1,5 @@
 #!/bin/bash
+cd Mars_explorer_project
 export PORT=5000
 unset PIP_USER
 
