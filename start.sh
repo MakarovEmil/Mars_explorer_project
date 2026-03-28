@@ -1,5 +1,5 @@
-#!C:/Users/Windows/Documents/Git/usr/bin/bash.exe
-cd .
+#!/bin/bash
+cd Mars_explorer
 export PORT=5000
 unset PIP_USER
 
@@ -10,7 +10,7 @@ if [ ! -d "venv" ]; then
 fi
 
 # Activate
-VENV_PYTHON="venv/Scripts/python"
+source venv/bin/activate
 
 # Try install (might fail if pip is broken, but packages should be there from packager_tool)
 if [ -f "requirements.txt" ]; then
